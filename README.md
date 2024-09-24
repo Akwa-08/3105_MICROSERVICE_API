@@ -46,8 +46,7 @@ This project is a simple microservices API that consists of three services: Prod
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/microservices-api.git
-   cd microservices-api
+   git clone https://github.com/[username]/3105_MICROSERVICE_API.git
 
 
 Install dependencies for each service:
