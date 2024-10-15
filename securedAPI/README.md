@@ -3,13 +3,16 @@
 This project is a simple microservices API that consists of three services: Product Service, Customer Service, and Order Service. Each service handles its own data and communicates through HTTP requests.
 
 ## Table of Contents
-- [Getting Started](#getting-started)
-- [Services Overview](#services-overview)
-- [API Endpoints](#api-endpoints)
-- [Installation](#installation)
-- [Running the Services](#running-the-services)
-- [Testing the API](#testing-the-api)
-- [Contributing](#contributing)
+- [Microservices API](#microservices-api)
+  - [Table of Contents](#table-of-contents)
+  - [Getting Started](#getting-started)
+    - [Prerequisites](#prerequisites)
+  - [Services Overview](#services-overview)
+  - [API Endpoints](#api-endpoints)
+    - [Product Service (Port 3001)](#product-service-port-3001)
+    - [Customer Service (Port 3002)](#customer-service-port-3002)
+    - [Order Service (Port 3003)](#order-service-port-3003)
+  - [Installation](#installation)
 
 ## Getting Started
 
@@ -54,18 +57,27 @@ Install dependencies for each service:
 For Product Service:
 
 cd product-service
+npm init -y
 npm install
+npm install express
+npm install axios
 
 
 For Customer Service:
 
 cd ../customer-service
+npm init -y
 npm install
+npm install express
+npm install axios
 
 For Order Service:
 
 cd ../order-service
+npm init -y
 npm install
+npm install express
+npm install axios
 
 
 Running the Services
@@ -100,7 +112,7 @@ Testing the Customer Service
 Add a New Customer:
 Method: POST
 URL: http://localhost:3002/customers
-Body: { "name": "Customer 1", "email": "customer1@example.com" }
+Body: { "name": "Customer 1", "phone": "21104450" }
 
 Testing the Order Service
 Create a New Order:
